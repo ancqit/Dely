@@ -1,0 +1,7 @@
+{
+  "name": "Dely",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
