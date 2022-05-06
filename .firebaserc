@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "testmart-8a099": {
+      "hosting": {
+        "app": [
+          "testmart-8a099"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "testmart-8a099"
+  }
+}
