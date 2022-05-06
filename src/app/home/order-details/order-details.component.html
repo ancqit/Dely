@@ -1,0 +1,17 @@
+
+<ion-grid>
+  <ion-row *ngFor="let veg of veggies" class="order">
+    <ion-col>
+      <div> {{veg.name}}</div>
+    </ion-col>
+    <ion-col>
+      <div>quantity:  {{veg.quantity}}</div>
+    </ion-col>
+    <ion-col>
+      <div>rate:  {{veg.rate}}</div>
+    </ion-col>
+    <ion-col>
+      <div>total:  {{veg.total}}</div>
+    </ion-col>
+  </ion-row>
+</ion-grid>

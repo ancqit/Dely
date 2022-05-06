@@ -1,3 +1,18 @@
-<p>
-  order-list works!
-</p>
+
+
+<ion-grid>
+  <ion-row *ngFor="let mobile of item" (click)="presentModal(mobile)" class="order">
+    <ion-col>
+      <div><span>Owner :</span> {{mobile.mobile}}</div>
+    </ion-col>
+    <ion-col>
+      <div><span> Status: </span>{{mobile.status}}</div>
+    </ion-col>
+    <ion-col>
+      <div><span> Order: </span>{{mobile.orderNumber}}</div>
+    </ion-col>   
+  </ion-row>
+</ion-grid>
+<ion-button click="takeOrder()">
+  give Order
+</ion-button>

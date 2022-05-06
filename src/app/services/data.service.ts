@@ -1,13 +1,15 @@
+/* eslint-disable @typescript-eslint/member-ordering */
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
+  public vegItems: any;
   private orderItem: OrderInBasket[] = [
     {
       mobile: 8340300635,
-      orderNumber:1,
+      orderNumber: 1,
       status: 0,
       items: [
         {
@@ -114,6 +116,13 @@ export class DataService {
   }
   public set orderItemSet(value: OrderInBasket[]) {
     this.orderItem = value;
+  }
+
+  public get vegItemsGet(): any {
+    return this.vegItems;
+  }
+  public set vegItemsSet(value: any) {
+    this.vegItems = value;
   }
 }
 
